@@ -1,13 +1,17 @@
 package org.abondar.experimental.concurrency;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import org.abondar.experimental.concurrency.command.core.CommandName;
+import org.abondar.experimental.concurrency.command.core.CommandRunner;
+
+import java.util.Locale;
 
 
 public class Main {
-    private static final Logger log = LoggerFactory.getLogger(Main.class);
+    static void main(String[] args) {
+        var commandRunner = new CommandRunner();
 
-    public static void main(String[] args) {
-       log.info("Hello world");
+        commandRunner.run(
+                CommandName.valueOf(args[0].trim().toUpperCase(Locale.ROOT))
+        );
     }
 }

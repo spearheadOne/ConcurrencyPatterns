@@ -5,6 +5,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.util.EnumMap;
+import java.util.Locale;
 import java.util.Map;
 
 public class CommandRunner {
@@ -22,14 +23,17 @@ public class CommandRunner {
     }
 
 
-    public void run(CommandName name) {
-        Command cmd = registry.get(name);
-        if (cmd == null) {
-            log.warn("Unknown/unregistered command: {}", name);
+    public void run(String name) {
+        CommandName key;
+        try {
+            key = CommandName.valueOf(name.trim().toUpperCase(Locale.ROOT));
+        } catch (Exception e) {
+            log.warn("Unknown command: {}", name);
             Command help = registry.get(CommandName.HELP);
             if (help != null) help.run();
             return;
         }
-        cmd.run();
+
+      registry.get(key).run();
     }
 }

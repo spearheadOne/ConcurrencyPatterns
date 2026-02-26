@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <property name="PATTERN"
+              value="%d{HH:mm:ss.SSS} %gray(|) %cyan(%-24.24thread) %gray(|) %highlight(%-5level) %gray(|) %magenta(%-32.32logger{32}) %gray(-) %msg%n%ex"/>
+
+    <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+            <pattern>${PATTERN}</pattern>
+        </encoder>
+    </appender>
+    <!-- default -->
+    <root level="INFO">
+        <appender-ref ref="CONSOLE"/>
+    </root>
+
+    <!-- tune your packages if needed -->
+    <logger name="org.abondar.experimental" level="INFO"/>
+</configuration>

@@ -10,6 +10,11 @@ public class Main {
     static void main(String[] args) {
         var commandRunner = new CommandRunner();
 
-        commandRunner.run(args[0]);
+        if (args.length == 0) {
+            commandRunner.run(CommandName.HELP.name());
+        } else {
+            commandRunner.run(args[0]);
+        }
+
     }
 }

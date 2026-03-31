@@ -1,5 +1,6 @@
 package org.abondar.experimental.concurrency.command.core;
 
+import org.abondar.experimental.concurrency.command.BlockingQueueCommand;
 import org.abondar.experimental.concurrency.command.HelpCommand;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -15,6 +16,7 @@ public class CommandRunner {
 
     public CommandRunner() {
         register(new HelpCommand());
+        register(new BlockingQueueCommand());
     }
 
     private void register(Command cmd) {

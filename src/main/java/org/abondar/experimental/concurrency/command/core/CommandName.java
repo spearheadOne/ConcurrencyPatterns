@@ -1,7 +1,8 @@
 package org.abondar.experimental.concurrency.command.core;
 
 public enum CommandName {
-    HELP("List available commands");
+    HELP("List available commands"),
+    QUEUE("Run a blocking queue");
 
     private final String description;
 

@@ -3,7 +3,8 @@ package org.abondar.experimental.concurrency.command.core;
 public enum CommandName {
     HELP("List available commands"),
     QUEUE("Run a blocking queue"),
-    PRC("Producer/Consumer pattern");
+    PRC("Producer/Consumer pattern"),
+    POOL("Working pool pattern");
 
     private final String description;
 

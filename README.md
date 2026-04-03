@@ -4,6 +4,7 @@ Core concurrency patterns implementation
 
 1. BlockingQueue
 2. Producer Consumer
+3. Worker pool
 
 ## Build and run
 ```

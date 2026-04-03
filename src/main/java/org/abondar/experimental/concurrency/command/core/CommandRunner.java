@@ -3,6 +3,7 @@ package org.abondar.experimental.concurrency.command.core;
 import org.abondar.experimental.concurrency.command.BlockingQueueCommand;
 import org.abondar.experimental.concurrency.command.HelpCommand;
 import org.abondar.experimental.concurrency.command.ProducerConsumerCommand;
+import org.abondar.experimental.concurrency.command.WorkerPoolCommand;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -19,6 +20,7 @@ public class CommandRunner {
         register(new HelpCommand());
         register(new BlockingQueueCommand());
         register(new ProducerConsumerCommand());
+        register(new WorkerPoolCommand());
     }
 
     private void register(Command cmd) {

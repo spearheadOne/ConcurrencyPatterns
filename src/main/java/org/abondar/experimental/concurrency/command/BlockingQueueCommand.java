@@ -2,7 +2,7 @@ package org.abondar.experimental.concurrency.command;
 
 import org.abondar.experimental.concurrency.command.core.Command;
 import org.abondar.experimental.concurrency.command.core.CommandName;
-import org.abondar.experimental.concurrency.queue.CustomBlockingQueue;
+import org.abondar.experimental.concurrency.pattern.CustomBlockingQueue;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

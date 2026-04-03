@@ -1,4 +1,4 @@
-package org.abondar.experimental.concurrency.queue;
+package org.abondar.experimental.concurrency.pattern;
 
 import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.Lock;

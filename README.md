@@ -2,9 +2,10 @@
 
 Core concurrency patterns implementation
 
-1. BlockingQueue
+1. Blocking queue
 2. Producer Consumer
 3. Worker pool
+4. Semaphore
 
 ## Build and run
 ```

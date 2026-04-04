@@ -4,7 +4,8 @@ public enum CommandName {
     HELP("List available commands"),
     QUEUE("Run a blocking queue"),
     PRC("Producer/Consumer pattern"),
-    POOL("Working pool pattern");
+    POOL("Working pool pattern"),
+    SEM("Semaphore");
 
     private final String description;
 

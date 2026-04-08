@@ -6,6 +6,7 @@ Core concurrency patterns implementation
 2. Producer Consumer
 3. Worker pool
 4. Semaphore
+5. Counter
 
 ## Build and run
 ```

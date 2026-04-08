@@ -19,6 +19,7 @@ public class CommandRunner {
         register(new ProducerConsumerCommand());
         register(new WorkerPoolCommand());
         register(new SempahoreCommand());
+        register(new CounterCommand());
     }
 
     private void register(Command cmd) {

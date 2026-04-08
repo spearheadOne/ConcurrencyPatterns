@@ -5,7 +5,8 @@ public enum CommandName {
     QUEUE("Run a blocking queue"),
     PRC("Producer/Consumer pattern"),
     POOL("Working pool pattern"),
-    SEM("Semaphore");
+    SEM("Semaphore"),
+    CNT("Shared counter");
 
     private final String description;
 

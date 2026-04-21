@@ -21,6 +21,7 @@ public class CommandRunner {
         register(new SempahoreCommand());
         register(new CounterCommand());
         register(new FanCommand());
+        register(new CustomFutureCommand());
     }
 
     private void register(Command cmd) {

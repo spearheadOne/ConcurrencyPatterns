@@ -8,6 +8,7 @@ Core concurrency patterns implementation
 4. Semaphore
 5. Counter
 6. Fan In/Out
+7. Custom future
 
 ## Build and run
 ```

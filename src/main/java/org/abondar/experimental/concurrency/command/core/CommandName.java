@@ -7,7 +7,8 @@ public enum CommandName {
     POOL("Working pool pattern"),
     SEM("Semaphore"),
     CNT("Shared counter"),
-    FAN("Fan In/Out");
+    FAN("Fan In/Out"),
+    FUTURE("A custom future");
 
     private final String description;
 

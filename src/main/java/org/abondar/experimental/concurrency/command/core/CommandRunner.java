@@ -20,6 +20,7 @@ public class CommandRunner {
         register(new WorkerPoolCommand());
         register(new SempahoreCommand());
         register(new CounterCommand());
+        register(new FanCommand());
     }
 
     private void register(Command cmd) {

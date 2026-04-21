@@ -6,7 +6,8 @@ public enum CommandName {
     PRC("Producer/Consumer pattern"),
     POOL("Working pool pattern"),
     SEM("Semaphore"),
-    CNT("Shared counter");
+    CNT("Shared counter"),
+    FAN("Fan In/Out");
 
     private final String description;
 

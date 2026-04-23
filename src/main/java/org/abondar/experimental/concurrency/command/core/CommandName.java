@@ -8,7 +8,8 @@ public enum CommandName {
     SEM("Semaphore"),
     CNT("Shared counter"),
     FAN("Fan In/Out"),
-    FUTURE("A custom future");
+    FUTURE("A custom future"),
+    STRC("Structured concurrency");
 
     private final String description;
 

@@ -22,6 +22,7 @@ public class CommandRunner {
         register(new CounterCommand());
         register(new FanCommand());
         register(new CustomFutureCommand());
+        register(new StructuredConcurrencyCommand());
     }
 
     private void register(Command cmd) {

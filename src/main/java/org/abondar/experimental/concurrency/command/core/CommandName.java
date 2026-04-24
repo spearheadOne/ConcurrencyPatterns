@@ -9,7 +9,8 @@ public enum CommandName {
     CNT("Shared counter"),
     FAN("Fan In/Out"),
     FUTURE("A custom future"),
-    STRC("Structured concurrency");
+    STRC("Structured concurrency"),
+    RATE("A tocken bucket rate limiter");
 
     private final String description;
 

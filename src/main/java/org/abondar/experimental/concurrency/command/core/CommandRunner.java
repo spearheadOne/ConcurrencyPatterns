@@ -23,6 +23,7 @@ public class CommandRunner {
         register(new FanCommand());
         register(new CustomFutureCommand());
         register(new StructuredConcurrencyCommand());
+        register(new RateLimitCommand());
     }
 
     private void register(Command cmd) {

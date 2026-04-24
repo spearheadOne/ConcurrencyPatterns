@@ -10,6 +10,7 @@ Core concurrency patterns implementation
 6. Fan In/Out
 7. Custom future
 8. Structured concurrency
+9. Rate limiter
 
 ## Build and run
 ```

@@ -11,6 +11,7 @@ Core concurrency patterns implementation
 7. Custom future
 8. Structured concurrency
 9. Rate limiter
+10. Custom Read/Write lock
 
 ## Build and run
 ```

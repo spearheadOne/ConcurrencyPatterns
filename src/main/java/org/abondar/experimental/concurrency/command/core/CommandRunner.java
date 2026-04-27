@@ -24,6 +24,7 @@ public class CommandRunner {
         register(new CustomFutureCommand());
         register(new StructuredConcurrencyCommand());
         register(new RateLimitCommand());
+        register(new ReadWriteLockCommand());
     }
 
     private void register(Command cmd) {

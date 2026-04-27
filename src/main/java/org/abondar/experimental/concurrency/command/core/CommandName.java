@@ -10,7 +10,8 @@ public enum CommandName {
     FAN("Fan In/Out"),
     FUTURE("A custom future"),
     STRC("Structured concurrency"),
-    RATE("A tocken bucket rate limiter");
+    RATE("A tocken bucket rate limiter"),
+    RWLOCK("A read-write lock");
 
     private final String description;
 

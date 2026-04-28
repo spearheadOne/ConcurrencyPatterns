@@ -11,7 +11,8 @@ public enum CommandName {
     FUTURE("A custom future"),
     STRC("Structured concurrency"),
     RATE("A tocken bucket rate limiter"),
-    RWLOCK("A read-write lock");
+    RWLOCK("A read-write lock"),
+    RETRY("Retry with Jitter pattern");
 
     private final String description;
 

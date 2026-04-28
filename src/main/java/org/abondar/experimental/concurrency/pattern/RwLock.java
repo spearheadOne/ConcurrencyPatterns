@@ -46,6 +46,9 @@ public class RwLock implements ReadWriteLock {
         public void lock() {
             monitor.lock();
             try {
+
+                //writer is currently active
+                //OR writer is waiting
                 while (isActiveWriter || waitingWriters > 0) {
                     readAvailable.awaitUninterruptibly();
                 }
@@ -127,6 +130,8 @@ public class RwLock implements ReadWriteLock {
             monitor.lock();
             try {
                 isActiveWriter = false;
+                //if another writer waits -> wake one writer
+                //otherwise -> wake all readers
                 if (waitingWriters > 0) {
                     writeAvailable.signal();
                 } else {

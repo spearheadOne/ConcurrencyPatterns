@@ -12,6 +12,7 @@ Core concurrency patterns implementation
 8. Structured concurrency
 9. Rate limiter
 10. Custom Read/Write lock
+11. Retry with Jitter
 
 ## Build and run
 ```
